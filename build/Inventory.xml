@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ProcureNetworks" verbose="10" parallel="tests"
+	thread-count="3">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="6666" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
+		chrome 3) IExplorer : ie8 / ie9 -->
+	<parameter name="selenium.browser" value="chrome" />
+
+	<!-- @NOTE: 1) Un-comment <test> tag to run respective test. 2) Comment 
+		<test> tag to unrun respective test. -->
+
+	<parameter name="selenium.url"
+		value="https://inv-pre.qa.procurenetworks.com/auth/login" />
+
+
+	<!-- 1 -->
+	<!-- Procure Network -->
+
+	<test name="Verify Procure network Login">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_Inventory_Edit_pop_up_box">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+
+<!-- 1 -->
+	<!-- Procure Network -->
+
+	<test name="Verify Procure Inventory tab">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_Inventory">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+
+
+
+<!-- 2 -->
+	<!-- Procure Network -->
+
+	<test name="Verify_Inventory_Searchtab">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_Inventory_Searchtab">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+
+<!-- 3 -->
+	<!-- Procure Network -->
+
+	<test name="Verify_InventorySearch_Table">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_InventorySearch_Table">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+
+<!-- 4 -->
+	<!-- Procure Network -->
+
+	<test name="Verify_Inventorysite">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_Inventorysite">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+
+
+<!-- 5 -->
+	<!-- Procure Network -->
+
+	<test name="Verify_Inventory_tablecheckbox">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_Inventory_tablecheckbox">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+
+
+<!-- 6 -->
+	<!-- Procure Network -->
+
+	<test name="Verify_Inventory_Edit_Button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_Inventory_Edit_Button">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+
+
+<!-- 7 -->
+	<!-- Procure Network -->
+
+	<test name="Verify_Inventory_Edit_pop_up_box">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.Inventory">
+
+				<methods>
+
+					<include name="Verify_Inventory_Edit_pop_up_box">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+</test>
+</suite> 
+
+

@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ProcureNetworks" verbose="10" parallel="tests"
+	thread-count="1">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="6666" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
+		chrome 3) IExplorer : ie8 / ie9 -->
+	<parameter name="selenium.browser" value="chrome" />
+
+	<!-- @NOTE: 1) Un-comment <test> tag to run respective test. 2) Comment 
+		<test> tag to unrun respective test. -->
+
+	<parameter name="selenium.url"
+		value="https://inv-pre.qa.procurenetworks.com/auth/login" />
+
+
+	<!-- 1 -->
+	<!-- Procure Network -->
+
+	<test name="Verify Procure network Login">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Procure">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 2 -->
+	<!-- Procure Network Search Assets -->
+
+	<test name="Verify Procure network Search Asset">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Search_Asset">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 3 -->
+	<!-- Procure Network Invalid User Name -->
+
+	<test name="Verify Procure network Invalid User Name">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Invalid_Username">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 4 -->
+	<!-- Procure Network Create New Asset -->
+
+	<test name="Verify Procure network Create New Asset">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Create_New_Asset">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 5 -->
+	<!-- Procure Network Search Last Created Asset -->
+
+	<test name="Verify Procure network Search Last Created Asset">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Search_Last_Created_Asset">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 6 -->
+	<!-- Procure Network Search Dropdown List -->
+
+	<test name="Verify Procure network Search Dropdown List">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Asset_Search_Dropdownlist">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 7 -->
+	<!-- Procure Network dropdown list -->
+
+	<test name="Verify Procure network dropdownlist">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Asset_site_Dropdownlist">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 8 -->
+	<!-- Procure Network Table Pagination -->
+
+	<test name="Verify Procure network table pagination">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Table_Pagination">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 9 -->
+	<!-- Procure Network Table Checkbox -->
+
+	<test name="Verify Procure network Table Checkbox">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Check_table_checkbox">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 10 -->
+	<!-- Procure Network Edit Button -->
+
+	<test name="Verify Procure network Edit Button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Check_Edit_button">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 11 -->
+	<!-- Procure Network Two Asset Form -->
+
+	<test name="Verify Procure network Two Asset Form">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_Twoassetform">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 12 -->
+	<!-- Procure Network parent asset filed -->
+
+	<test name="Verify Procure network Parent asset field">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_ParentAssetfield">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 13 -->
+	<!-- Procure Network CategoryAssetfield -->
+
+	<test name="Verify Procure network CategoryAssetfield">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_CategoryAssetfield">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 14 -->
+	<!-- Procure Network Edit Cost -->
+
+	<test name="Verify Procure network Edit Cost">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_cost">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 15 -->
+	<!-- Procure Network Depreciation Class -->
+
+	<test name="Verify Procure network Depreciation Class">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_Depreciation_Class">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 16 -->
+	<!-- Procure Network Model Number -->
+
+	<test name="Verify Procure network Model Number">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_ModelNumber">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 17 -->
+	<!-- Procure Network Purchase Date -->
+
+	<test name="Verify Procure network Purchase Date">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_PurchaseDate">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 18 -->
+	<!-- Procure Network Edit Vendor -->
+
+	<test name="Verify Procure network Edit Vendor">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_Vendor">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 19 -->
+	<!-- Procure Network Edit Site -->
+
+	<test name="Verify Procure network Edit Site">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_Site">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 20 -->
+	<!-- Procure Network Save Button -->
+
+	<test name="Verify Procure network Save Button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_Savebutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 21 -->
+	<!-- Procure Network Cancel Button -->
+
+	<test name="Verify Procure network Cancel Button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Edit_Cancelbutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 22 -->
+	<!-- Procure Network Delete Button -->
+
+	<test name="Verify Procure network Delete Button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Asset_Deletebutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 23 -->
+	<!-- Procure Network No Button -->
+
+	<test name="Verify Procure network No Button ">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Delete_Asset_nobutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 24 -->
+	<!-- Procure Network Account Page -->
+
+	<test name="Verify Procure network Account Page">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_User_Account_Page">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 25 -->
+	<!-- Procure Network User Logout -->
+
+	<test name="Verify Procure network User Logout">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_User_Logout">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 26 -->
+	<!-- Verify Asset code Validation -->
+
+	<test name="Verify Asset Code Validation">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Asset_Code_Validation">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 27 -->
+	<!-- Verify Model Validation -->
+
+	<test name="Verify Procure network Model Validation">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Model_Validation">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 28 -->
+	<!-- Verify Model Number Validation -->
+
+	<test name="Verify Model Number Validation">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Model_Number_Validation">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 29 -->
+	<!-- Verify Vendor Validation -->
+
+	<test name="Verify Vendor Validation">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Vendor_Validation">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 30 -->
+	<!-- Verify Site Validation -->
+
+	<test name="Verify Procure Site Validation">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Site_Validation">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 31 -->
+	<!-- Verify Depreciation Class Validation -->
+
+	<test name="Verify Procure Depreciation Class Validation">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Depreciation_Class_Validation">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 32 -->
+	<!-- Verify Upload Image -->
+
+	<test name="Verify Upload Image">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Upload_Asset_Image">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 33 -->
+	<!-- Verify Cancel Button -->
+
+	<test name="Verify Procure Cancel Button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Cancel_Button">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 34 -->
+	<!-- Verify Move Assets -->
+
+	<test name="Verify Procure Move Assets">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Move_Asset">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 35 -->
+	<!-- Verify Search Assets Popup -->
+
+	<test name="Verify Procure Search Asset popup">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Search_Asset_Popup">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<!-- 36 -->
+	<!-- Verify Invalid Values -->
+
+	<test name="Verify Procure network Invalid Values">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Search_Invalid_Values">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+
+	<!-- 37 -->
+	<!-- Verify Cancelbutton-->
+
+	<test name="Verify Procure networ Cancel button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Remove_Asset_poupbox_cancelbutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+    <!-- 38 -->
+	<!-- Verify Source field of remove asset-->
+
+	<test name="Verify Procure network source field remove asset">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Remvoe_Asset_Sourcefield">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+     <!-- 39 -->
+	<!-- Verify Department dropdown-->
+
+	<test name="Verify Procure network Department Dropdown list">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Remove_Asset_Department">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	  <!-- 40 -->
+	<!-- Verify  Sale radiobutton-->
+
+	<test name="Verify Procure networks Sale radio button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_RemoveAsset_Resonradiobutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+ <!-- 41 -->
+	<!-- Verify  Damage Radiobutton-->
+
+	<test name="Verify Procure network Damage Radio button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_RemoveAsset_Reason_Damageradiobutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+ <!-- 42 -->
+	<!-- Verify  Donation Radiobutton-->
+
+	<test name="Verify Procure networks Donation Radio button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_RemoveAsset_Reaon_Donationradiobutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	<!-- 43 -->
+	<!-- Verify  Other Radiobutton-->
+
+	<test name="Verify Procure networks Others Radio button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_RemoveAsset_Reason_Otherradiobutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 44 -->
+	<!-- Verify  Quantity field-->
+
+	<test name="Verify Procure network Quantity field ">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Quantity">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+<!-- 45 -->
+	<!-- Verify  Add button-->
+
+	<test name="Verify Procure network Add button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Addbutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	<!-- 46 -->
+	<!-- Verify Restock Asset page-->
+
+	<test name="Verify Procure networks Restock page">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Asset">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	<!-- 47 -->
+	<!-- Verify Restock Assetcode field-->
+
+	<test name="Verify Procure networks Assetcode field">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Assetcodefield">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	
+	<!-- 48 -->
+	<!--  Restock Asset Destination dropdown-->
+
+	<test name="Verify Procure networks Destination dropdown">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Destination_Dropdown">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	
+	<!-- 49 -->
+	<!--  Restock Asset Department-->
+
+	<test name="Verify Procure networks Asset Department">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Department_Dropdown">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	
+	<!-- 50 -->
+	<!--  Verify Restock Asset Cost field-->
+
+	<test name="Verify Procure network Resrock Cost field">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Costfield">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	
+		<!-- 51 -->
+	<!--  Verify Restock Asset Quantity-->
+
+	<test name="Verify Procure network Asset Quantity">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Quantity">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	
+		<!-- 52 -->
+	<!--  Verify Restock Asset Add button-->
+
+	<test name="Verify Procure network Asset Add button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Add">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	
+	<!-- 53 -->
+	<!-- Verify Restock Asset Table Remove button-->
+
+	<test name="Verify Procure network Asset table remove button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Removebutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	
+	<!-- 54 -->
+	<!-- Verify Restock Asset Save button-->
+
+	<test name="Verify Procure network Asset save button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Savebutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	<!-- 55 -->
+	<!-- Verify Restock Asset Cancel button-->
+
+	<test name="Verify Procure network Cancel button">
+
+		<classes>
+
+			<class name="com.procurenetworks.verifications.ProcureNetworks">
+
+				<methods>
+
+					<include name="Verify_Restock_Cancelbutton">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+</suite> 
+

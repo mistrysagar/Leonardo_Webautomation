@@ -1,0 +1,32 @@
+machine:
+  environment:
+    DBUS_SESSION_BUS_ADDRESS: /dev/null
+  java:
+    version: openjdk8      
+dependencies:
+  post:
+    - sudo echo ~/.aws/config     
+    - sudo pip install awscli
+    - echo 'region = us-west-2' >> ~/.aws/config
+#    - wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar
+#    - java -jar selenium-server-standalone-2.44.0.jar -port 6666:
+#        background: true   
+    - wget http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar
+    - java -jar selenium-server-standalone-3.4.0.jar -port 6666:
+        background: true
+#    - wget http://chromedriver.storage.googleapis.com/2.32/chromedriver_linux64.zip
+    - wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
+    - unzip chromedriver_linux64.zip
+    - sudo cp -f chromedriver /usr/local/bin/
+    - curl -L -o google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - sudo dpkg -i google-chrome.deb
+    - sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
+    - rm google-chrome.deb            
+test:                  
+  override:                                                                      
+    - mvn clean test -Dsurefire.suiteXmlFiles=ORAPP.xml                   
+  post:       
+      - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+      - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;     
+   
+ 

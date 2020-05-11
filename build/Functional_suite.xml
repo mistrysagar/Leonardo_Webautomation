@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Functional_Suites_For_Procure" verbose="10"
+ parallel="tests" thread-count="3">
+
+ <!-- @NOTES: 1) Un-comment <suite-file> tag to run respective test suite. 
+  2) Comment <suite-file> tag to unrun respective test suite. -->
+
+
+ <suite-files>
+
+  <!-- Run All Scripts -->
+  <suite-file path="./Procure.xml" /> 
+  <suite-file path="./Inventory.xml" /> 
+
+
+ </suite-files>
+
+</suite>

@@ -1,0 +1,97 @@
+/*************
+* general settings
+*************/
+body {
+	font-family: Verdana;
+	background-color: #222222;
+}
+
+div.testsSummary {
+	background-color: #ffffff;
+	width: 400px;
+	margin: 1em auto;
+	border: 1px solid #CCC;
+	padding: 1em;
+	padding-top:1em
+}
+
+table.MyClass td,th {border: solid 3px black;text-align: center}
+
+/***************************************
+* green tick, red x or question mark ? *
+***************************************/
+div.testSummaryFailed, div.testSummaryPassed, div.testSummarySkipped {
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+div.testSummaryFailed {
+	background-image: url("img/tests-failed.png");
+}
+div.testSummaryPassed {
+	background-image: url("img/tests-passed.png");
+}
+div.testSummarySkipped {
+	background-image: url("img/tests-skipped.png");
+}
+
+/******************
+* all other stuff *
+******************/
+.testSummaryPassed span {
+	display: block;
+}
+.testSummarySkipped span {
+	display: block;
+}
+.testSummaryFailed span {
+	display: block;
+}
+.failedBad, .passedOk, .skippedBad {
+	font-weight: bold;
+}
+.failedBad, .skippedBad {
+	color: red;
+}
+.passedOk {
+	color: green;
+}
+div.skippedTests {
+	font-size: 90%;
+	margin: 2ex;
+	padding: 1ex;
+	border: 1px dotted #C00; 
+}
+div.failedTests {
+	font-size: 90%;
+	margin: 2ex;
+	padding: 1ex;
+	border: 1px dotted #C00; 
+}
+
+div.skippedTests span, div.failedTests span {
+	display: block;
+}
+.failedTestMethod, .skippedTestMethod {
+	margin-left: 2em;
+}
+.skippedTestsTitle, .failedTestsTitle {
+	font-weight: bold;
+	margin-bottom: 1ex;
+}
+
+
+div.centered 
+{
+text-align: center;
+}
+div.centered table 
+{
+margin: 0 auto; 
+text-align: left;
+}
+
+div.centered table 
+{
+margin: 0 auto; 
+text-align: left;
+}
