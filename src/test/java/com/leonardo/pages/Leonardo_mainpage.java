@@ -1140,7 +1140,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		common.log("Step :: Click on All category");
 		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
 				.click();
-common.pause(10);
+		common.pause(10);
 		System.out.println("Step :: Select categry as Accounting");
 		common.log("Step :: Select category as Accounting");
 		driver.findElement(By.xpath("//li[contains(text(),'Accounting')]")).click();
@@ -1333,7 +1333,7 @@ common.pause(10);
 		common.log("Step :: Click on All category");
 		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
 				.click();
-common.pause(10);
+		common.pause(10);
 		System.out.println("Step :: Select categry as Accounting");
 		common.log("Step :: Select category as Accounting");
 		driver.findElement(By.xpath("//li[contains(text(),'Accounting')]")).click();
@@ -1343,7 +1343,6 @@ common.pause(10);
 		driver.findElement(By.xpath("//span[@class='icon-filter ng-binding']")).click();
 
 		common.pause(25);
-
 
 		common.pause(35);
 
@@ -1517,46 +1516,59 @@ common.pause(10);
 
 		common.pause(35);
 
-//		System.out.println("Step :: Click on Filter By");
-//		common.log("Step :: Click on Filter BY");
-//		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
-//				.click();
-//
-//		System.out.println("Step :: Click on category");
-//		common.log("Step :: Click on category");
-//		driver.findElement(By.xpath("//li[contains(text(),'Category')]")).click();
-//
-//		common.pause(25);
-//
-//		System.out.println("Step :: Click on All category");
-//		common.log("Step :: Click on All category");
-//		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
-//				.click();
-//common.pause(10);
-//		System.out.println("Step :: Select categry as Accounting");
-//		common.log("Step :: Select category as Accounting");
-//		driver.findElement(By.xpath("//li[contains(text(),'Accounting')]")).click();
-//
-//		System.out.println("Step :: Click on Search icon");
-//		common.log("Step :: Click on Search icon");
-//		driver.findElement(By.xpath("//span[@class='icon-filter ng-binding']")).click();
-//
+		// System.out.println("Step :: Click on Filter By");
+		// common.log("Step :: Click on Filter BY");
+		// driver.findElement(By.xpath("//div[@class='wrapper-select capitalize
+		// ng-isolate-scope']//div[@class='arrow']"))
+		// .click();
+		//
+		// System.out.println("Step :: Click on category");
+		// common.log("Step :: Click on category");
+		// driver.findElement(By.xpath("//li[contains(text(),'Category')]")).click();
+		//
+		// common.pause(25);
+		//
+		// System.out.println("Step :: Click on All category");
+		// common.log("Step :: Click on All category");
+		// driver.findElement(By.xpath("//div[@class='wrapper-select capitalize
+		// ng-isolate-scope']//div[@class='arrow']"))
+		// .click();
+		// common.pause(10);
+		// System.out.println("Step :: Select categry as Accounting");
+		// common.log("Step :: Select category as Accounting");
+		// driver.findElement(By.xpath("//li[contains(text(),'Accounting')]")).click();
+		//
+		// System.out.println("Step :: Click on Search icon");
+		// common.log("Step :: Click on Search icon");
+		// driver.findElement(By.xpath("//span[@class='icon-filter
+		// ng-binding']")).click();
+		//
 		common.pause(45);
-
 
 		System.out.println("Step :: Click on three dot for the created task from Today workspace");
 		common.log("Step :: Click on three dot for the created task from Today workspace");
-		driver.findElement(By.xpath("//body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main ng-isolate-scope']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks wrapper-tasks-workspace ng-scope ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//div[2]//span[2]")).click();
+		driver.findElement(By.xpath(
+				"//body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main ng-isolate-scope']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks wrapper-tasks-workspace ng-scope ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//div[2]//span[2]"))
+				.click();
 		// Leave note
 		common.pause(25);
 
 		System.out.println("Step :: Click on leave note");
 		common.log("Step :: Click on leave note");
-		driver.findElement(By.xpath("//body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main ng-isolate-scope']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks wrapper-tasks-workspace ng-scope ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//li[3]")).click();
-////body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main ng-isolate-scope']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks wrapper-tasks-workspace ng-scope ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//li[3]
+		driver.findElement(By.xpath(
+				"//body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main ng-isolate-scope']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks wrapper-tasks-workspace ng-scope ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//li[3]"))
+				.click();
+		//// body[@class='ng-scope block-ui
+		//// block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content
+		//// ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column
+		//// region-main
+		//// ng-isolate-scope']/div[@class='content-column']/div[@class='content-main
+		//// table']/div[@class='zone-content']/div[@class='region-content
+		//// ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks
+		//// wrapper-tasks-workspace ng-scope
+		//// ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//li[3]
 		common.pause(30);
-		WebElement notefield = driver.findElement(By.xpath(
-				"//textarea[@placeholder='Note']"));
+		WebElement notefield = driver.findElement(By.xpath("//textarea[@placeholder='Note']"));
 		notefield.sendKeys("testnote");
 		notefield.getAttribute("value");
 		System.out.println("Step :: Enter the note >> " + notefield);
@@ -1569,34 +1581,42 @@ common.pause(10);
 
 		System.out.println("Step :: Click on three dot for the created task from Today workspace");
 		common.log("Step :: Click on three dot for the created task from Today workspace");
-		driver.findElement(By.xpath("//body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main ng-isolate-scope']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks wrapper-tasks-workspace ng-scope ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//div[2]//span[2]")).click();
+		driver.findElement(By.xpath(
+				"//body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main ng-isolate-scope']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='ng-scope']/div[@class='ng-scope']/div[@class='wrapper-tasks wrapper-tasks-workspace ng-scope ng-isolate-scope']/div[@class='ng-scope']/div[@class='content']/div[@class='col-left']/ul/li[1]/div[1]//div[2]//span[2]"))
+				.click();
 		common.pause(50);
 		// Assign vendor
-//		System.out.println("Step :: Click on Assign vendor");
-//		common.log("Step :: Click on assign vendor");
-//		WebElement assignuser = driver.findElement(
-//				By.xpath("(//li[@class='change-user ng-binding ng-scope'][contains(.,'Assign vendor')])[1]"));
-//		if (assignuser.isDisplayed()) {
-//			assignuser.click();
-//			System.out.println("Step:: Assgn vendor link present");
-//		} else {
-//			System.out.println("Step:: Assgn vendor link missing");
-//		}
-//
-//		common.pause(40);
-//		WebElement pop = driver.findElement(By.xpath("/html[1]/body[1]/div[3]/div[2]/form[1]/h2[1]"));
-//		pop.getAttribute("value");
-//		System.out.println("Step :: Assign vendor popup " + pop);
-//		common.log("Step :: Assign vendor popup" + pop);
-//
-//		System.out.println("Step :: Click on Assign vendor");
-//		common.log("Step :: Click on assign vendor");
-//		driver.findElement(By.xpath("//span[@class='btn btn-cancel ng-binding']")).click();
-//
-//		System.out.println("Step :: Click on three dot for the created task from Today workspace");
-//		common.log("Step :: Click on three dot for the created task from Today workspace");
-//		driver.findElement(By.xpath("(//span[@class='toggler ng-binding ng-scope'][contains(.,'Expand')])[1]")).click();
-//		common.pause(50);
+		// System.out.println("Step :: Click on Assign vendor");
+		// common.log("Step :: Click on assign vendor");
+		// WebElement assignuser = driver.findElement(
+		// By.xpath("(//li[@class='change-user ng-binding ng-scope'][contains(.,'Assign
+		// vendor')])[1]"));
+		// if (assignuser.isDisplayed()) {
+		// assignuser.click();
+		// System.out.println("Step:: Assgn vendor link present");
+		// } else {
+		// System.out.println("Step:: Assgn vendor link missing");
+		// }
+		//
+		// common.pause(40);
+		// WebElement pop =
+		// driver.findElement(By.xpath("/html[1]/body[1]/div[3]/div[2]/form[1]/h2[1]"));
+		// pop.getAttribute("value");
+		// System.out.println("Step :: Assign vendor popup " + pop);
+		// common.log("Step :: Assign vendor popup" + pop);
+		//
+		// System.out.println("Step :: Click on Assign vendor");
+		// common.log("Step :: Click on assign vendor");
+		// driver.findElement(By.xpath("//span[@class='btn btn-cancel
+		// ng-binding']")).click();
+		//
+		// System.out.println("Step :: Click on three dot for the created task from
+		// Today workspace");
+		// common.log("Step :: Click on three dot for the created task from Today
+		// workspace");
+		// driver.findElement(By.xpath("(//span[@class='toggler ng-binding
+		// ng-scope'][contains(.,'Expand')])[1]")).click();
+		// common.pause(50);
 
 		System.out.println("Step :: Click on Assign User");
 		common.log("Step :: Click on Assign User");
@@ -1648,11 +1668,12 @@ common.pause(10);
 
 		System.out.println("Step :: Click on Property tab");
 		common.log("Step :: Click on Property tab");
-		driver.findElement(By.xpath("//a[@class='label-property ng-binding ng-scope']")).click();
+		driver.findElement(By.xpath("//a[@class='label-property ng-binding ng-scope ng-isolate-scope']")).click();
 
 		common.pause(50);
 
-		WebElement btn = driver.findElement(By.xpath("//span[@class='btn btn-small right ng-binding']"));
+		WebElement btn = driver
+				.findElement(By.xpath("//span[@class='btn btn-small right ng-binding ng-isolate-scope']"));
 		if (btn.isDisplayed()) {
 			System.out.println("Step :: Click on Past due button");
 			common.log("Step :: Click on Past button");
@@ -1696,69 +1717,74 @@ common.pause(10);
 
 	public void Completetask_functionality_in_property_tasks() {
 
-		common.pause(60);
-
 		System.out.println("Step :: Click on Property tab");
 		common.log("Step :: Click on Property tab");
-		driver.findElement(By.xpath("//a[@class='label-property ng-binding ng-scope']")).click();
-		common.pause(25);
+		driver.findElement(By.xpath("//a[@class='label-property ng-binding ng-scope ng-isolate-scope']")).click();
+
+		common.pause(30);
+
 		System.out.println("Step ::Click on Property Selector");
 		common.log("Step :: Click on Property Selector");
-		driver.findElement(
-				By.xpath("//div[@class='wrapper-select capitalize disabled']//input[@class='capitalize ng-scope']"))
+		driver.findElement(By.xpath(
+				"//div[@class='wrapper-select capitalize ng-isolate-scope disabled']//input[@class='capitalize ng-scope ng-isolate-scope']"))
 				.click();
 
-		common.pause(50);
+		common.pause(30);
 
 		System.out.println("Step ::Click on By Portfolio");
 		common.log("Step :: Click on By Portfolio");
 		driver.findElement(By.xpath("//span[contains(text(),'By Portfolio')]")).click();
 
-		common.pause(50);
 		System.out.println("Step ::Click on Select portfolio dropdown");
 		common.log("Step :: Click on Select portfolio dropdown");
 		driver.findElement(By.xpath(
-				"//div[@class='form-select-multiple filter-portfolio_dialog']//input[@class='capitalize ng-scope']"))
+				"//div[@class='form-select-multiple filter-portfolio_dialog']//input[@class='capitalize ng-scope ng-isolate-scope']"))
 				.click();
 
-		common.pause(50);
 		System.out.println("Step :: Select Portfolio from list");
 		common.log("Step :: Select Portfolio from list");
 		driver.findElement(By.xpath("//li[contains(text(),'Portfolio 132321321')]")).click();
-		common.pause(15);
+
+		common.pause(40);
 		System.out.println("Step :: Click on Property Results");
 		common.log("Step :: Click on Property Results");
-		driver.findElement(By.xpath("(//li[@ng-class='getElementClasses(element)'][contains(.,'property 111')])[2]"))
-				.click();
-
-		common.pause(45);
-
-		System.out.println("Step :: Click on Addd task button");
-		common.log("Step :: Click on Add task button");
-		driver.findElement(By.xpath("//span[contains(.,'Add Task')]")).click();
+		driver.findElement(By.xpath("//li[@class='capitalize ng-binding ng-scope ng-isolate-scope']")).click();
 
 		common.pause(25);
+
+		System.out.println("Step :: Click on Add task button");
+		common.log("Step :: Click on Add task button");
+		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding ng-scope ng-isolate-scope']"))
+				.click();
+
+		common.pause(30);
 		String taskname = common.generateRandomChars(5);
 		System.out.println("Step :: Enter the Task name >> " + taskname);
 		common.log("Step :: Ennter the Task name >>" + taskname);
-		driver.findElement(By.xpath("//input[@name='value']")).sendKeys(taskname);
+		driver.findElement(By.xpath("//label[@class='widget-label required ng-binding ng-isolate-scope']//..//input"))
+				.sendKeys(taskname);
 
-		common.pause(25);
 		System.out.println("Step :: Click on Priority Normal Radio button");
 		common.log("Step :: Click Priority Normal Radio button");
 		driver.findElement(By.xpath("//li[contains(text(),'Normal')]")).click();
 
-		System.out.println("Step :: Select categry as Asset Management");
-		common.log("Step :: Select category asAsset Management");
-		driver.findElement(By.xpath("//li[contains(text(),'Asset Management')]")).click();
+		JavascriptExecutor jse4 = (JavascriptExecutor) driver;
+		jse4.executeScript("window.scrollBy(0,500)", "");
+
+		System.out.println("Step :: Select categry as Accounting");
+		common.log("Step :: Select category as Accounting");
+		driver.findElement(By.xpath("//li[contains(text(),'Accounting')]")).click();
 
 		System.out.println("Step :: Click on Sub category dropdown");
 		common.log("Step :: Click on Sub category dropdown");
-		driver.findElement(By.xpath("//ng-transclude//select[@name='value']")).click();
-
+		driver.findElement(By.xpath("//div[@placeholder='Select Subcategory']//div[@class='arrow']")).click();
+		common.pause(10);
 		System.out.println("Step :: Select Sub category as accounting");
 		common.log("Step :: Select Sub category as accounting");
-		driver.findElement(By.xpath("//ng-transclude//select[@name='value']//option[@value='0']")).click();
+		driver.findElement(By.xpath("//div[@placeholder='Select Subcategory']//ul//li[1]")).click();
+
+		JavascriptExecutor jse5 = (JavascriptExecutor) driver;
+		jse5.executeScript("window.scrollBy(0,500)", "");
 
 		System.out.println("Step :: Click on Property Info Type");
 		common.log("Step :: Click on Property Info Type");
@@ -1768,12 +1794,13 @@ common.pause(10);
 
 		System.out.println("Step :: Click on Save changes button");
 		common.log("Step :: Click on Save changes button");
-		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding']")).click();
+		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding ng-isolate-scope']")).click();
 
-		common.pause(40);
+		common.pause(45);
+
 		System.out.println("Step :: Click on Filter By");
 		common.log("Step :: Click on Filter BY");
-		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize']//input[@class='capitalize ng-scope']"))
+		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
 				.click();
 
 		System.out.println("Step :: Click on category");
@@ -1784,17 +1811,18 @@ common.pause(10);
 
 		System.out.println("Step :: Click on All category");
 		common.log("Step :: Click on All category");
-		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize']//input[@class='capitalize ng-scope']"))
+		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
 				.click();
-
+		common.pause(10);
 		System.out.println("Step :: Select categry as Accounting");
 		common.log("Step :: Select category as Accounting");
-		driver.findElement(By.xpath("//li[contains(text(),'Asset Management')]")).click();
+		driver.findElement(By.xpath("//li[contains(text(),'Accounting')]")).click();
 
 		System.out.println("Step :: Click on Search icon");
 		common.log("Step :: Click on Search icon");
 		driver.findElement(By.xpath("//span[@class='icon-filter ng-binding']")).click();
-		common.pause(40);
+
+		common.pause(25);
 
 		System.out.println("Step :: Search and click on created taskname>>" + taskname);
 		common.log("Step :: Search and click on created taskname>>" + taskname);
@@ -1894,7 +1922,7 @@ common.pause(10);
 
 		System.out.println("Step :: Click on Add new unitworkflow button");
 		common.log("Step ::Click on Add new unitworkflow button");
-		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding ng-isolate-scope']")).click();
 		common.pause(25);
 		System.out.println("Step :: Enter the name in unit work flow field");
 		common.log("Step ::Enter the Name in unit work flow field");
@@ -1905,7 +1933,7 @@ common.pause(10);
 
 		System.out.println("Step :: Click on Save button");
 		common.log("Step :: Click on Save button");
-		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding']")).click();
+		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding ng-isolate-scope']")).click();
 
 		common.pause(30);
 
@@ -1925,8 +1953,12 @@ common.pause(10);
 
 		System.out.println("Step :: Click on Search icon");
 		common.log("Step :: Click on Search icon");
-		driver.findElement(By.xpath("//span[@class='icon-filter ng-binding']")).click();
-
+		driver.findElement(By.xpath(
+				"//div[@class='wrappers-actions table-cell align-right']//icon[@class='ng-isolate-scope inline']//ng-include[@class='ng-scope']//*[local-name()='svg']"))
+				.click();
+		// div[@class='wrappers-actions table-cell
+		// align-right']//icon[@class='ng-isolate-scope
+		// inline']//ng-include[@class='ng-scope']//*[local-name()='svg']
 		common.pause(25);
 
 		System.out.println("Step :: Click on Add new item button");
@@ -1965,16 +1997,14 @@ common.pause(10);
 		common.pause(25);
 		System.out.println("Step :: Click on Add new unit type");
 		common.log("Step :: Click On Add new unit type");
-		driver.findElement(
-				By.xpath("//span[@class='btn btn-black btn-small ng-binding'][contains(.,'Add new unit type')]"))
-				.click();
+		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding ng-isolate-scope']")).click();
 
 		String unittype = common.generateRandomChars(3);
 		driver.findElement(By.xpath("//input[@placeholder='Unit Type']")).sendKeys(unittype);
 		System.out.println("Step :: Enter Unit type" + unittype);
 		common.log("Step :: Enter Unit type" + unittype);
 
-		driver.findElement(By.xpath("//span[@class='btn btn-print ng-binding'][contains(.,'Save')]")).click();
+		driver.findElement(By.xpath("//span[@class='btn btn-print ng-binding ng-isolate-scope']")).click();
 		common.pause(25);
 		System.out.println("Step :: Click Unit section from left menus");
 		common.log("Step :: Click unit section from left menus");
@@ -1999,17 +2029,21 @@ common.pause(10);
 		common.log("Step :: Enter the unitwork flow name" + name);
 		driver.findElement(By.xpath("//input[@placeholder='Unit workflow name']")).sendKeys(name);
 
-		driver.findElement(By.xpath("//span[@class='icon-filter ng-binding']")).click();
+		driver.findElement(By.xpath(
+				"//div[@class='wrappers-actions table-cell align-right']//icon[@class='ng-isolate-scope inline']//ng-include[@class='ng-scope']//*[local-name()='svg']"))
+				.click();
 
 		common.pause(15);
 
 		System.out.println("Step :: Click on Launch Unitwork flow");
 		common.log("Step :: Click on Launch Unitwork flow");
-		driver.findElement(By.xpath(
-				"//body[@class='ng-scope block-ui block-ui-anim-fade']/div[@class='ng-scope']/ui-view[@class='ng-scope']/div[@class='snap-content ng-scope']/div[@class='layout-main']/div[@class='wrapper-columns']/div[@class='wrapper-columns-column region-main']/div[@class='content-column']/div[@class='content-main table']/div[@class='zone-content']/div[@class='region-content ng-scope']/div[@class='workflow-list ng-scope']/div[2]/div[1]/div[2]/span[1]"))
+		driver.findElement(
+				By.xpath("//span[@class='inline btn btn-small btn-black ng-binding ng-scope ng-isolate-scope']"))
 				.click();
 
-		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize disabled']")).click();
+		driver.findElement(
+				By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope disabled']//div[@class='arrow']"))
+				.click();
 
 		common.pause(50);
 
@@ -2020,9 +2054,8 @@ common.pause(10);
 		common.pause(50);
 		System.out.println("Step ::Click on Select portfolio dropdown");
 		common.log("Step :: Click on Select portfolio dropdown");
-		driver.findElement(By.xpath(
-				"//div[@class='form-select-multiple filter-portfolio_dialog']//input[@class='capitalize ng-scope']"))
-				.click();
+		driver.findElement(
+				By.xpath("//div[@class='form-select-multiple filter-portfolio_dialog']//div[@class='arrow']")).click();
 
 		common.pause(50);
 		System.out.println("Step :: Select Portfolio from list");
@@ -2032,19 +2065,19 @@ common.pause(10);
 		common.pause(40);
 		System.out.println("Step :: Click on Property Results");
 		common.log("Step :: Click on Property Results");
-		driver.findElement(By.xpath(
-				"//ul[@class='results']//li[@class='capitalize ng-binding ng-scope'][contains(text(),'property 111')]"))
-				.click();
+		driver.findElement(By.xpath("//li[@class='capitalize ng-binding ng-scope ng-isolate-scope']")).click();
 
 		System.out.println("Step :: Click on Launch button");
 		common.log("Step :: Click on Launch button");
-		driver.findElement(By.xpath("//span[@class='btn ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn ng-binding ng-isolate-scope']")).click();
+
 		common.pause(20);
 		driver.findElement(By.xpath("(//div[contains(@class,'form-checkbox')])[1]")).click();
 
 		System.out.println("Step :: Click on Select button");
 		common.log("Step :: Click on Select button");
-		driver.findElement(By.xpath("//span[@class='btn ng-binding'][contains(text(),'Select')]")).click();
+		driver.findElement(By.xpath("//span[@class='btn ng-binding ng-isolate-scope'][contains(text(),'Select')]"))
+				.click();
 
 		common.pause(25);
 
@@ -2065,29 +2098,22 @@ common.pause(10);
 		System.out.println("Step :: Click on Definew workflow tasks");
 		common.log("Step :: Click on Deifne workflow tasks");
 		driver.findElement(By.xpath("//a[@ui-sref='unit-turn.workflows'][contains(.,'Define Unit Workflow')]")).click();
-		common.pause(15);
+		common.pause(25);
 
 		System.out.println("Step :: Click on Add new unitworkflow button");
 		common.log("Step ::Click on Add new unitworkflow button");
-		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding ng-isolate-scope']")).click();
 		common.pause(25);
-
-		System.out.println("Step :: Click on save button");
-		common.log("Step ::Click on save button");
-		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding']")).click();
-
-		String val = driver.findElement(By.xpath("//p[@class='error ng-binding']")).getText();
-		System.out.println("Step :: Validaiton message>>" + val);
-		common.log("Step :: Validation message>>" + val);
-		common.pause(15);
+		System.out.println("Step :: Enter the name in unit work flow field");
+		common.log("Step ::Enter the Name in unit work flow field");
 		String name = common.generateRandomChars(5);
-		System.out.println("Step :: Enter the name in unit work flow field>>" + name);
-		common.log("Step ::Enter the Name in unit work flow field>>" + name);
-		driver.findElement(By.xpath("(//input[contains(@name,'value')])[1]")).sendKeys(name);
+		driver.findElement(By.xpath(
+				"//div[@class='form-item form-group ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength']//input[@name='value']"))
+				.sendKeys(name);
 
 		System.out.println("Step :: Click on Save button");
 		common.log("Step :: Click on Save button");
-		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding']")).click();
+		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding ng-isolate-scope']")).click();
 
 		common.pause(30);
 
@@ -2101,22 +2127,26 @@ common.pause(10);
 				.click();
 
 		common.pause(5);
-		System.out.println("Step :: Enter the unitwork flow name>>" + name);
-		common.log("Step :: Enter the unitwork flow name>>" + name);
+		System.out.println("Step :: Enter the unitwork flow name" + name);
+		common.log("Step :: Enter the unitwork flow name" + name);
 		driver.findElement(By.xpath("//input[@placeholder='Unit workflow name']")).sendKeys(name);
 
 		System.out.println("Step :: Click on Search icon");
 		common.log("Step :: Click on Search icon");
-		driver.findElement(By.xpath("//span[@class='icon-filter ng-binding']")).click();
-
+		driver.findElement(By.xpath(
+				"//div[@class='wrappers-actions table-cell align-right']//icon[@class='ng-isolate-scope inline']//ng-include[@class='ng-scope']//*[local-name()='svg']"))
+				.click();
+		// div[@class='wrappers-actions table-cell
+		// align-right']//icon[@class='ng-isolate-scope
+		// inline']//ng-include[@class='ng-scope']//*[local-name()='svg']
 		common.pause(25);
-
 		WebElement ele = driver
-				.findElement(By.xpath("//span[@class='inline btn btn-small btn-black ng-binding ng-scope']"));
+				.findElement(By.xpath("//div[@class='header']"));
 
 		String taskname = common.generateRandomChars(3);
 		if (ele.isDisplayed()) {
 
+			common.pause(25);
 			System.out.println("Step :: Click on Add new item button");
 			common.log("Step :: Click on Add new item button");
 			driver.findElement(By.xpath("//span[contains(.,'Add new item')]")).click();
@@ -2162,12 +2192,12 @@ common.pause(10);
 		common.pause(25);
 		System.out.println("Step :: Click on Add new unit button");
 		common.log("Step :: Click on Add new unit button");
-		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn btn-black btn-small ng-binding ng-isolate-scope']")).click();
 
 		System.out.println("Step :: Click on select unit type dropdown");
 		common.log("Step :: Click on select unit type dropdown");
 		driver.findElement(By.xpath(
-				"//div[@class='form-select-multiple filter-']//div[@class='wrapper-select capitalize']//div[@class='arrow']"))
+				"//div[@class='form-select-multiple filter-']//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
 				.click();
 		common.pause(15);
 		System.out.println("Step :: select unit type");
@@ -2176,7 +2206,7 @@ common.pause(10);
 
 		System.out.println("Step :: Click on select property");
 		common.log("Step :: Click on select property");
-		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize disabled']//div[@class='arrow']")).click();
+		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope disabled']//div[@class='arrow']")).click();
 
 		System.out.println("Step ::Click on By Portfolio");
 		common.log("Step :: Click on By Portfolio");
@@ -2198,7 +2228,7 @@ common.pause(10);
 		System.out.println("Step :: Click on Property Results");
 		common.log("Step :: Click on Property Results");
 		driver.findElement(By.xpath(
-				"//ul[@class='results']//li[@class='capitalize ng-binding ng-scope'][contains(text(),'property 111')]"))
+				"//li[@class='capitalize ng-binding ng-scope ng-isolate-scope']"))
 				.click();
 
 		String unitnumber = common.generateRandomChars(3);
@@ -2334,6 +2364,7 @@ common.pause(10);
 				.click();
 
 		common.pause(5);
+
 		System.out.println("Step :: Enter the unitwork flow name>>" + name);
 		common.log("Step :: Enter the unitwork flow name>>" + name);
 		driver.findElement(By.xpath("//input[@placeholder='Unit workflow name']")).sendKeys(name);
@@ -2344,6 +2375,7 @@ common.pause(10);
 		common.pause(25);
 		driver.findElement(By.xpath("//div[@class='arrow arrow-up']")).click();
 		common.pause(15);
+
 		// WebElement tname = driver.findElement(By.xpath("//td[@class='field-name
 		// ng-binding']"));
 		String sd = driver.findElement(By.xpath("//td[@class='field-name ng-binding']")).getText();
