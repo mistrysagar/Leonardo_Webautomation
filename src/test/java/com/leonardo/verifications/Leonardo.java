@@ -9,8 +9,13 @@ import org.testng.annotations.Test;
 import com.leonardo.init.Common;
 import com.leonardo.init.SeleniumInit;
 import com.leonardo.pages.Leonardo_mainpage;
-
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 public class Leonardo extends Leonardo_mainpage {
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public static String currentTest;
 
 	public Leonardo() {
 		super(null);
@@ -31,9 +36,9 @@ public class Leonardo extends Leonardo_mainpage {
 
 	@Test
 	public void Verify_Login_with_valid_Details() {
-
+		
 		Login_with_valid_Details();
-
+		
 	}
 
 	/**

@@ -42,6 +42,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.leonardo.init.Common;
 import com.leonardo.pages.abstractpage.AbstractPage;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class Leonardo_mainpage extends AbstractPage {
 
@@ -55,6 +56,7 @@ public class Leonardo_mainpage extends AbstractPage {
 
 	// Login with valid details
 	public void Login_with_valid_Details() {
+		test = extent.startTest("passTest");
 
 		System.out.println("Step :: Enter the Valid Email");
 		common.log("Step :: Enter the Valid Email");
@@ -64,6 +66,11 @@ public class Leonardo_mainpage extends AbstractPage {
 		common.log("Step :: Enter the Valid Password");
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("12345678a");
 
+		System.out.println("Step :: Click on I agree terms and conditions check-box");
+		common.log("Steps:: Click on I agree terms and conditions check-box");
+		common.log("Step :: Enter the Valid Password");
+		driver.findElement(By.xpath("//div[@class='wrapper-inline inline']//div[2]//span[1]//div[1]//icon")).click();
+
 		System.out.println("Step :: Click on Sign in button");
 		common.log("Step :: Click on Sign in button");
 		driver.findElement(By.xpath("//button[@class='btn ng-binding ng-isolate-scope']")).click();
@@ -71,9 +78,11 @@ public class Leonardo_mainpage extends AbstractPage {
 		WebElement logo = driver.findElement(By.xpath("//a[@class='logo ng-binding ng-isolate-scope']"));
 
 		if (logo.isDisplayed()) {
+
 			System.out.println("Step :: Login succesfully , Leonardo logo is displaying");
 			common.log("Step :: Login succesfully , Leonardo logo is displaying");
 		} else {
+
 			System.out.println("Step :: Login failed , Leonardo logo is not displaying");
 			common.log("Step :: Login failed , Leonardo logo is not  displaying");
 		}
@@ -2120,7 +2129,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		System.out.println("Step :: Click on Filter By");
 		common.log("Step :: Click on Filter By");
 		driver.findElement(By.xpath("//div[@class='arrow']")).click();
-
+		common.pause(20);
 		System.out.println("Step :: Click on unitflork flow as category");
 		common.log("Step :: Click on unitflork flow as category");
 		driver.findElement(By.xpath("//li[@ng-class='getElementClasses(element)'][contains(.,'Unit workflow name')]"))
@@ -2140,8 +2149,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		// align-right']//icon[@class='ng-isolate-scope
 		// inline']//ng-include[@class='ng-scope']//*[local-name()='svg']
 		common.pause(25);
-		WebElement ele = driver
-				.findElement(By.xpath("//div[@class='header']"));
+		WebElement ele = driver.findElement(By.xpath("//div[@class='header']"));
 
 		String taskname = common.generateRandomChars(3);
 		if (ele.isDisplayed()) {
@@ -2206,7 +2214,9 @@ public class Leonardo_mainpage extends AbstractPage {
 
 		System.out.println("Step :: Click on select property");
 		common.log("Step :: Click on select property");
-		driver.findElement(By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope disabled']//div[@class='arrow']")).click();
+		driver.findElement(
+				By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope disabled']//div[@class='arrow']"))
+				.click();
 
 		System.out.println("Step ::Click on By Portfolio");
 		common.log("Step :: Click on By Portfolio");
@@ -2227,9 +2237,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		common.pause(40);
 		System.out.println("Step :: Click on Property Results");
 		common.log("Step :: Click on Property Results");
-		driver.findElement(By.xpath(
-				"//li[@class='capitalize ng-binding ng-scope ng-isolate-scope']"))
-				.click();
+		driver.findElement(By.xpath("//li[@class='capitalize ng-binding ng-scope ng-isolate-scope']")).click();
 
 		String unitnumber = common.generateRandomChars(3);
 		driver.findElement(By.xpath("//input[@placeholder='Number']")).sendKeys(unitnumber);

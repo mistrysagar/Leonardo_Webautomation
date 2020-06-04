@@ -39,10 +39,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import com.relevantcodes.extentreports.*;
+import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import com.leonardo.pages.IndexPage;
 import com.leonardo.pages.Leonardo_mainpage;
 
@@ -56,9 +55,10 @@ import com.leonardo.pages.abstractpage.AbstractPage;
 // @Listeners({ atu.testng.reports.listeners.ATUReportsListener.class,
 // ConfigurationListener.class, MethodListener.class })
 public class SeleniumInit implements ILoggerStatus {
-	static ExtentTest test;
-	static ExtentReports report;
-
+	
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public static String currentTest;
 	// public static final String PROCUREURL =
 	// "https://inv-pre.qa.procurenetworks.com/auth/login"; // Dynamic Procure
 	// URL
@@ -71,7 +71,7 @@ public class SeleniumInit implements ILoggerStatus {
 	protected static String test_data_folder_path = null;
 	// screen-shot folder
 	protected static String screenshot_folder_path = null;
-	public static String currentTest; // current running test
+	// current running test
 
 	protected static Logger logger = Logger.getLogger("testing");
 	protected ChromeDriver driver;
@@ -123,6 +123,22 @@ public class SeleniumInit implements ILoggerStatus {
 	// @Parameters("browser")
 	public void setUp(Method method) throws Exception {
 
+		
+		extent = new ExtentReports("C:\\extreport\\STMExtentReport.html", false);
+//		extent.loadConfig(
+//				new File("C:\\extent-config.xml"));
+		
+
+
+//		 test = extent.startTest((this.getClass().getSimpleName() + "::" +
+		
+		test = extent.startTest("Leonardo", "Leonardo-247");
+		extent.addSystemInfo("Host Name", "testscenario").addSystemInfo("Environment", "Automation Testing")
+				.addSystemInfo("User Name", "sagar mistry");
+		
+		
+		
+		
 		// ATU Reports
 		// ATUReports.setWebDriver(driver);
 		// ATUReports.indexPageDescription = "Auction Software Automation";
@@ -217,42 +233,35 @@ public class SeleniumInit implements ILoggerStatus {
 	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult testResult) {
 
-		try {
 
+		try {
 			String testName = testResult.getName();
 
-			if (!testResult.isSuccess()) {
+			if (testResult.isSuccess()) {
+				test.log(LogStatus.PASS, "PASS : " + testResult.getName() + "\n");
+				 test.log(LogStatus.PASS, "PASS : " +
+				 testResult.getThrowable());
+			} else if (!testResult.isSuccess()) {
+				test.log(LogStatus.FAIL, "FAIL : " + testResult.getName() + "\n");
+				 test.log(LogStatus.FAIL, "FAIL : " +
+				 testResult.getThrowable());
+			
+			}
 
-				/* Print test result to Jenkins Console */
-				System.out.println();
-				System.out.println("TEST FAILED - " + testName);
-				System.out.println();
-				// System.out.println("ERROR MESSAGE: "
-				// + testResult.getThrowable());
-				System.out.println("\n");
-				Reporter.setCurrentTestResult(testResult);
-
-				/* Make a screenshot for test that failed */
-//				String screenshotName = common.getCurrentTimeStampString() + testName;
-//				Reporter.log("<br> <b>Please look to the screenshot - </b>");
-//				common.makeScreenshot(driver, screenshotName);
-			} else {
-				System.out.println("TEST PASSED - " + testName + "\n"); // Print
-																		// test
-																		// result
-																		// to
-																		// Jenkins
-																		// Console
+			else {
+				System.out.println("TEST SKIPPED - " + testName + "\n");
 			}
 
 			driver.manage().deleteAllCookies();
 			driver.quit();
 
 		} catch (Throwable throwable) {
-
+			// TODO: handle exception
 		}
+		extent.endTest(test);
+		extent.flush();
+		extent.close();
 	}
-	
 	
 
 	/**

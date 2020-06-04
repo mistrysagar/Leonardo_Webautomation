@@ -21,44 +21,44 @@
 	<!-- TC:-3 -->
 <!-- 	Login into Leonardo Web App with valid credentials -->
 
-<!-- 	<test name="Verify_Login_with_valid_Details"> -->
+	<test name="Verify_Login_with_valid_Details">
 
-<!-- 	<classes> -->
+	<classes>
 
-<!-- 	<class name="com.leonardo.verifications.Leonardo"> -->
+	<class name="com.leonardo.verifications.Leonardo">
 
-<!-- 	<methods> -->
+	<methods>
 
-<!-- 	<include name="Verify_Login_with_valid_Details"> -->
-<!-- 	</include> -->
+	<include name="Verify_Login_with_valid_Details">
+	</include>
 
-<!-- 	</methods> -->
+	</methods>
 
-<!-- 	</class> -->
+	</class>
 
-<!-- 	</classes> -->
-<!-- 	</test> -->
+	</classes>
+	</test>
 
 
 	<!-- TC:-4 -->
 	<!-- Login into Leonardo Web App with Invalid credentials -->
-<!-- 	<test name="Verify_login_with_invalid_details_blank_spaces"> -->
+	<test name="Verify_login_with_invalid_details_blank_spaces">
 
-<!-- 	<classes> -->
+	<classes>
 
-<!-- 	<class name="com.leonardo.verifications.Leonardo"> -->
+	<class name="com.leonardo.verifications.Leonardo">
 
-<!-- 	<methods> -->
+	<methods>
 
-<!-- 	<include name="Verify_login_with_invalid_details_blank_spaces"> -->
-<!-- 	</include> -->
+	<include name="Verify_login_with_invalid_details_blank_spaces">
+	</include>
 
-<!-- 	</methods> -->
+	</methods>
 
-<!-- 	</class> -->
+	</class>
 
-<!-- 	</classes> -->
-<!-- 	</test> -->
+	</classes>
+	</test>
 
 
 	<!-- TC:-10 -->
@@ -367,23 +367,23 @@
 <!-- 	</test> -->
 	<!--TC:-22 -->
 	<!--Verify_Assign_user_functionality_in_Unit_workflow_tasks_with_all_validations -->
-	<test name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations">
+<!-- 	<test name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations"> -->
 
-	<classes>
+<!-- 	<classes> -->
 
-	<class name="com.leonardo.verifications.Leonardo">
+<!-- 	<class name="com.leonardo.verifications.Leonardo"> -->
 
-	<methods>
+<!-- 	<methods> -->
 
-	<include name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations">
-	</include>
+<!-- 	<include name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations"> -->
+<!-- 	</include> -->
 
-	</methods>
+<!-- 	</methods> -->
 
-	</class>
+<!-- 	</class> -->
 
-	</classes>
-	</test>
+<!-- 	</classes> -->
+<!-- 	</test> -->
 	<!--TC:-23 -->
 	<!--Verify_Leave_anote_functionality_in_unit_workflow_tasks_with_all_validations -->
 
