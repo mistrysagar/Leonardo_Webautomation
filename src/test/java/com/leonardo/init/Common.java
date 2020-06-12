@@ -214,17 +214,15 @@ public class Common {
 	 */
 	public String getCurrentTimeStampString() {
 
-		 Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
-		 
-	        //Get Current Day as a number
-	        int todayInt = calendar.get(Calendar.DAY_OF_MONTH);
-	       
-	 
-	        //Integer to String Conversion
-	        String todayStr = Integer.toString(todayInt);
-	       
-	 
-	        return todayStr;
+		Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+
+		// Get Current Day as a number
+		int todayInt = calendar.get(Calendar.DAY_OF_MONTH);
+
+		// Integer to String Conversion
+		String todayStr = Integer.toString(todayInt);
+
+		return todayStr;
 	}
 
 	/**
@@ -538,9 +536,9 @@ public class Common {
 		jse.executeScript("scroll(0, 750);");
 
 	}
-	
-	public void ScrollORpage()
-	{
+
+	public void ScrollORpage() {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,1000)", "");
-	}}
+	}
+}

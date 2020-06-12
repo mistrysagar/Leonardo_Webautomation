@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.leonardo.init.Common;
 import com.leonardo.pages.abstractpage.AbstractPage;
 
-public class IndexPage<OR_APP> extends AbstractPage {
+public class IndexPage extends AbstractPage {
 
 	Common common = new Common(driver);
 

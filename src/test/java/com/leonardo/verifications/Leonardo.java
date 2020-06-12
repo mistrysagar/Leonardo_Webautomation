@@ -12,6 +12,7 @@ import com.leonardo.pages.Leonardo_mainpage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
 public class Leonardo extends Leonardo_mainpage {
 	public static ExtentReports extent;
 	public static ExtentTest test;
@@ -36,9 +37,9 @@ public class Leonardo extends Leonardo_mainpage {
 
 	@Test
 	public void Verify_Login_with_valid_Details() {
-		
+
 		Login_with_valid_Details();
-		
+
 	}
 
 	/**
@@ -308,46 +309,45 @@ public class Leonardo extends Leonardo_mainpage {
 
 		Launch_workflow();
 	}
+
 	@Test
-	public void To_verify_the_Define_workflow_with_dymamic_form()
-	{
+	public void To_verify_the_Define_workflow_with_dymamic_form() {
 		Login_with_valid_Details();
 		Defineworkflow_with_Dynamic_form();
 	}
+
 	@Test
-	public void To_verfify_the_Edit_Delete_fucitonalities_for_Defined_workflow()
-	{
+	public void To_verfify_the_Edit_Delete_fucitonalities_for_Defined_workflow() {
 		Login_with_valid_Details();
 		Edit_Delete_Funcitonality_Workflowtask();
 	}
+
 	@Test
-	public void Verfiy_Fixed_date_recurrance_in_workspace() throws ParseException
-	{
+	public void Verfiy_Fixed_date_recurrance_in_workspace() throws ParseException {
 		Login_with_valid_Details();
 		Add_task_with_fixed_date_recurrance();
 	}
-	
+
 	@Test
-	public void To_verfiy_On_Demand_Instuction_topics()
-	{
+	public void To_verfiy_On_Demand_Instuction_topics() {
 		Login_with_valid_Details();
 		On_Demand_instruction_topics();
 	}
+
 	@Test
-	public void Add_On_demand_category_in_demand_instruction_library()
-	{
+	public void Add_On_demand_category_in_demand_instruction_library() {
 		Login_with_valid_Details();
 		Add_categories_OnDemand_instruction();
 	}
+
 	@Test
-	public void Edit_Delete_created_on_Demand_category_from_list()
-	{
+	public void Edit_Delete_created_on_Demand_category_from_list() {
 		Login_with_valid_Details();
 		Edit_Delete_Created_category_OnDemandinsturction();
 	}
+
 	@Test
-	public void On_Demand_instruction_Addondemand_Subcategory()
-	{
+	public void On_Demand_instruction_Addondemand_Subcategory() {
 		Login_with_valid_Details();
 		Add_OnDemand_Subcategory();
 	}

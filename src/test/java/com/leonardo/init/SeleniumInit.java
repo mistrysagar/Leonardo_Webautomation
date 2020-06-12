@@ -55,13 +55,11 @@ import com.leonardo.pages.abstractpage.AbstractPage;
 // @Listeners({ atu.testng.reports.listeners.ATUReportsListener.class,
 // ConfigurationListener.class, MethodListener.class })
 public class SeleniumInit implements ILoggerStatus {
-	
+
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static String currentTest;
-	// public static final String PROCUREURL =
-	// "https://inv-pre.qa.procurenetworks.com/auth/login"; // Dynamic Procure
-	// URL
+
 	/* Minimum requirement for test configuration */
 	protected String testUrl; // Test url
 	protected String frontsignupUrl; // Front Signup URL
@@ -81,18 +79,8 @@ public class SeleniumInit implements ILoggerStatus {
 	{
 		// System.setProperty("atu.reporter.config", "atu.properties");
 	}
-	
-	/* Page's declaration */
 
-	// protected AbstractPage abstractPage;
-	// protected Main_Page mainpage;
-	// protected Procure_Inventory procureinventory;
-	// protected ProcureNetworks procurenetwork;
-	// protected Inventory inventory;
-	// protected IndexPage indexpage;
-	// protected Procure_Contacts contact;
-	// protected Procure_Report report;
-	// protected Procure_Admin admin;
+	/* Page's declaration */
 
 	// And many more ...
 
@@ -110,7 +98,6 @@ public class SeleniumInit implements ILoggerStatus {
 		testUrl = testContext.getCurrentXmlTest().getParameter("selenium.url");
 
 	}
-	
 
 	/**
 	 * WebDriver initialization
@@ -123,22 +110,16 @@ public class SeleniumInit implements ILoggerStatus {
 	// @Parameters("browser")
 	public void setUp(Method method) throws Exception {
 
-		
 		extent = new ExtentReports("C:\\extreport\\STMExtentReport.html", false);
-//		extent.loadConfig(
-//				new File("C:\\extent-config.xml"));
-		
+		// extent.loadConfig(
+		// new File("C:\\extent-config.xml"));
 
+		// test = extent.startTest((this.getClass().getSimpleName() + "::" +
 
-//		 test = extent.startTest((this.getClass().getSimpleName() + "::" +
-		
 		test = extent.startTest("Leonardo", "Leonardo-247");
 		extent.addSystemInfo("Host Name", "testscenario").addSystemInfo("Environment", "Automation Testing")
 				.addSystemInfo("User Name", "sagar mistry");
-		
-		
-		
-		
+
 		// ATU Reports
 		// ATUReports.setWebDriver(driver);
 		// ATUReports.indexPageDescription = "Auction Software Automation";
@@ -180,11 +161,11 @@ public class SeleniumInit implements ILoggerStatus {
 			 * 
 			 */
 
-		//	 System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+			// System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 
 			/**
 			 * Enable when run on local Machine
-			 *  
+			 * 
 			 */
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -200,11 +181,7 @@ public class SeleniumInit implements ILoggerStatus {
 			throw new Exception("Browser is not correct");
 		}
 
-		// String URL = "https://inv-pre.qa.procurenetworks.com/auth/login";
-
 		driver.get(testUrl);
-
-		// indexpage = new IndexPage(driver);
 
 	}
 
@@ -233,19 +210,16 @@ public class SeleniumInit implements ILoggerStatus {
 	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult testResult) {
 
-
 		try {
 			String testName = testResult.getName();
 
 			if (testResult.isSuccess()) {
 				test.log(LogStatus.PASS, "PASS : " + testResult.getName() + "\n");
-				 test.log(LogStatus.PASS, "PASS : " +
-				 testResult.getThrowable());
+				test.log(LogStatus.PASS, "PASS : " + testResult.getThrowable());
 			} else if (!testResult.isSuccess()) {
 				test.log(LogStatus.FAIL, "FAIL : " + testResult.getName() + "\n");
-				 test.log(LogStatus.FAIL, "FAIL : " +
-				 testResult.getThrowable());
-			
+				test.log(LogStatus.FAIL, "FAIL : " + testResult.getThrowable());
+
 			}
 
 			else {
@@ -262,7 +236,6 @@ public class SeleniumInit implements ILoggerStatus {
 		extent.flush();
 		extent.close();
 	}
-	
 
 	/**
 	 * Log given message to Reporter output.

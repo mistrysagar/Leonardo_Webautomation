@@ -21,326 +21,336 @@
 	<!-- TC:-3 -->
 	<!-- Login into Leonardo Web App with valid credentials -->
 
-	<!-- <test name="Verify_Login_with_valid_Details"> -->
+	<test name="Verify_Login_with_valid_Details">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_Login_with_valid_Details"> -->
-	<!-- </include> -->
+					<include name="Verify_Login_with_valid_Details">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test> 
 
 
 	<!-- TC:-4 -->
 	<!-- Login into Leonardo Web App with Invalid credentials -->
-	<!-- <test name="Verify_login_with_invalid_details_blank_spaces"> -->
+	<test name="Verify_login_with_invalid_details_blank_spaces">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_login_with_invalid_details_blank_spaces"> -->
-	<!-- </include> -->
+					<include name="Verify_login_with_invalid_details_blank_spaces">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 
 	<!-- TC:-10 -->
 	<!-- Verify the Property Task -->
-<!-- 	<test name="Verfiy_PropertyTasks"> -->
+	<test name="Verfiy_PropertyTasks">
 
-<!-- 	<classes> -->
+		<classes>
 
-<!-- 	<class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-<!-- 	<methods> -->
+				<methods>
 
-<!-- 	<include name="Verfiy_PropertyTasks"> -->
-<!-- 	</include> -->
+					<include name="Verfiy_PropertyTasks">
+					</include>
 
-<!-- 	</methods> -->
+				</methods>
 
-<!-- 	</class> -->
+			</class>
 
-<!-- 	</classes> -->
-<!-- 	</test> -->
+		</classes>
+	</test>
 
 	<!-- TC:-7 -->
 	<!-- Verify Remember User name -->
-<!-- 	<test name="Verify_Remember_Username"> -->
+	<!-- <test name="Verify_Remember_Username"> -->
 
-<!-- 	<classes> -->
+	<!-- <classes> -->
 
-<!-- 	<class name="com.leonardo.verifications.Leonardo"> -->
+	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
 
-<!-- 	<methods> -->
+	<!-- <methods> -->
 
-<!-- 	<include name="Verify_Remember_Username"> -->
-<!-- 	</include> -->
+	<!-- <include name="Verify_Remember_Username"> -->
+	<!-- </include> -->
 
-<!-- 	</methods> -->
+	<!-- </methods> -->
 
-<!-- 	</class> -->
+	<!-- </class> -->
 
-<!-- 	</classes> -->
-<!-- 	</test> -->
+	<!-- </classes> -->
+	<!-- </test> -->
 
 
 	<!-- TC:-11 -->
 	<!-- Updated the property task -->
-<!-- 	<test name="Verify_Updated_PropertyTask"> -->
+	<test name="Verify_Updated_PropertyTask">
 
-<!-- 	<classes> -->
+		<classes>
 
-<!-- 	<class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-<!-- 	<methods> -->
+				<methods>
 
-<!-- 	<include name="Verify_Updated_PropertyTask"> -->
-<!-- 	</include> -->
+					<include name="Verify_Updated_PropertyTask">
+					</include>
 
-<!-- 	</methods> -->
+				</methods>
 
-<!-- 	</class> -->
+			</class>
 
-<!-- 	</classes> -->
-<!-- 	</test> -->
+		</classes>
+	</test>
 
 
 	<!--TC:-12 -->
 	<!-- Edit created task with blank spaces and verify the validation message -->
-<!-- 	<test name="Verify_Edit_Created_task_with_blank_spaces"> -->
+	<test name="Verify_Edit_Created_task_with_blank_spaces">
 
-<!-- 	<classes> -->
+		<classes>
 
-<!-- 	<class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-<!-- 	<methods> -->
+				<methods>
 
-<!-- 	<include name="Verify_Edit_Created_task_with_blank_spaces"> -->
-<!-- 	</include> -->
+					<include name="Verify_Edit_Created_task_with_blank_spaces">
+					</include>
 
-<!-- 	</methods> -->
+				</methods>
 
-<!-- 	</class> -->
+			</class>
 
-<!-- 	</classes> -->
-<!-- 	</test> -->
+		</classes>
+	</test>
 
 	<!--TC:-13 -->
 	<!-- Verify_clone_created_task_functionality_with_all_validations_in_Templates -->
-	<test name="Verify_clone_created_task_functionality_with_all_validations_in_Templates">
+	<test
+		name="Verify_clone_created_task_functionality_with_all_validations_in_Templates">
 
-	<classes>
+		<classes>
 
-	<class name="com.leonardo.verifications.Leonardo">
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<methods>
+				<methods>
 
-	<include name="Verify_clone_created_task_functionality_with_all_validations_in_Templates">
-	</include>
+					<include
+						name="Verify_clone_created_task_functionality_with_all_validations_in_Templates">
+					</include>
 
-	</methods>
+				</methods>
 
-	</class>
+			</class>
 
-	</classes>
+		</classes>
 	</test>
 	<!--TC:-14 -->
 	<!-- Verify_Delete_Template_with_all_child_and_without_all_child_templates -->
-	<test name="Verify_Delete_Template_with_all_child_and_without_all_child_templates">
+	<test
+		name="Verify_Delete_Template_with_all_child_and_without_all_child_templates">
 
-	<classes>
+		<classes>
 
-	<class name="com.leonardo.verifications.Leonardo">
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<methods>
+				<methods>
 
-	<include name="Verify_Delete_Template_with_all_child_and_without_all_child_templates">
-	</include>
+					<include
+						name="Verify_Delete_Template_with_all_child_and_without_all_child_templates">
+					</include>
 
-	</methods>
+				</methods>
 
-	</class>
+			</class>
 
-	</classes>
+		</classes>
 	</test>
 	<!--TC:-15 -->
 	<!-- Verify_Edit_Property_task_functionality -->
-	<!-- <test name="Verify_Edit_Property_task_functionality"> -->
+	<test name="Verify_Edit_Property_task_functionality">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_Edit_Property_task_functionality"> -->
-	<!-- </include> -->
+					<include name="Verify_Edit_Property_task_functionality">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!--TC:-16 -->
 	<!-- Verfiy_Edit_Property_Tasks_with_only_blankspaces -->
-	<!-- <test name="Verfiy_Edit_Property_Tasks_with_only_blankspaces"> -->
+	<test name="Verfiy_Edit_Property_Tasks_with_only_blankspaces">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verfiy_Edit_Property_Tasks_with_only_blankspaces"> -->
-	<!-- </include> -->
+					<include name="Verfiy_Edit_Property_Tasks_with_only_blankspaces">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!--TC:-17 -->
 	<!-- Verfiy_Edit_Property_Tasks_with_only_blankspaces -->
-	<!-- <test name="Verify_Change_Priority_Recurrence_Assign_user_and_deactivate_Template_functionality_in_Property_Tasks"> -->
+	<test
+		name="Verify_Change_Priority_Recurrence_Assign_user_and_deactivate_Template_functionality_in_Property_Tasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_Change_Priority_Recurrence_Assign_user_and_deactivate_Template_functionality_in_Property_Tasks"> -->
-	<!-- </include> -->
+					<include
+						name="Verify_Change_Priority_Recurrence_Assign_user_and_deactivate_Template_functionality_in_Property_Tasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!--TC:-18 -->
 	<!-- To verify Leave a note, Assign Vendor, Assign user, Snooze this task, 
 		Cannot Do Tasks functionality in Property Tasks -->
-	<!-- <test name="To_verify_Leaveanote_Assign_Vendor_Assign_user_Snooze_this_task_Cannot_Do_Tasks_functionality_in_PropertyTasks"> -->
+	<test
+		name="To_verify_Leaveanote_Assign_Vendor_Assign_user_Snooze_this_task_Cannot_Do_Tasks_functionality_in_PropertyTasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="To_verify_Leaveanote_Assign_Vendor_Assign_user_Snooze_this_task_Cannot_Do_Tasks_functionality_in_PropertyTasks"> -->
-	<!-- </include> -->
+					<include
+						name="To_verify_Leaveanote_Assign_Vendor_Assign_user_Snooze_this_task_Cannot_Do_Tasks_functionality_in_PropertyTasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!--TC:-19 -->
 	<!-- To verify Leave a note, Assign Vendor, Assign user, Snooze this task, 
 		Cannot Do Tasks functionality in Property Tasks -->
-	<!-- <test name="To_verify_Current_and_Past_due_tasks_functionality_in_propertytasks"> -->
+	<test
+		name="To_verify_Current_and_Past_due_tasks_functionality_in_propertytasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="To_verify_Current_and_Past_due_tasks_functionality_in_propertytasks"> -->
-	<!-- </include> -->
+					<include
+						name="To_verify_Current_and_Past_due_tasks_functionality_in_propertytasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!--TC:-20 -->
 	<!--Verify_Completetask_functionality_in_propertytasks -->
-	<!-- <test name="verify_Completetask_functionality_in_propertytasks"> -->
+	<test name="verify_Completetask_functionality_in_propertytasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verify_Completetask_functionality_in_propertytasks"> -->
-	<!-- </include> -->
+					<include name="verify_Completetask_functionality_in_propertytasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!--TC:-01 -->
 	<!--verify_Request_corporate_account_here_with_valid_details -->
-	<!-- <test name="verify_Request_corporate_account_here_with_valid_details"> -->
+	<test name="verify_Request_corporate_account_here_with_valid_details">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verify_Request_corporate_account_here_with_valid_details"> -->
-	<!-- </include> -->
+					<include name="verify_Request_corporate_account_here_with_valid_details">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!--TC:-02 -->
 	<!--verify_Request_corporate_account_form_with_blankspaces -->
-	<!-- <test name="verify_Request_corporate_account_form_with_blankspaces"> -->
+	<test name="verify_Request_corporate_account_form_with_blankspaces">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verify_Request_corporate_account_form_with_blankspaces"> -->
-	<!-- </include> -->
+					<include name="verify_Request_corporate_account_form_with_blankspaces">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 
 	<!--UNIT TASKS WORKFLOW -->
@@ -348,64 +358,66 @@
 	<!--TC:-21 -->
 	<!--verify_Request_corporate_account_form_with_blankspaces -->
 
-	<!-- <test name="verify_Add_new_unit_workflow_functionality"> -->
+	<test name="verify_Add_new_unit_workflow_functionality">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verify_Add_new_unit_workflow_functionality"> -->
-	<!-- </include> -->
+					<include name="verify_Add_new_unit_workflow_functionality">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!--TC:-22 -->
 	<!--Verify_Assign_user_functionality_in_Unit_workflow_tasks_with_all_validations -->
-	<!-- <test name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations"> -->
+	<test
+		name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations"> -->
-	<!-- </include> -->
+					<include
+						name="Verify_Assign_user_functionality_in_Unit_workflow_template_with_all_validations">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!--TC:-23 -->
 	<!--Verify_Leave_anote_functionality_in_unit_workflow_tasks_with_all_validations -->
 
-<!-- 	<test -->
-<!-- 		name="Verify_Leave_anote_functionality_in_unit_workflow_tasks_with_all_validations"> -->
+	<test
+		name="Verify_Leave_anote_functionality_in_unit_workflow_tasks_with_all_validations">
 
-<!-- 		<classes> -->
+		<classes>
 
-<!-- 			<class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-<!-- 				<methods> -->
+				<methods>
 
-<!-- 					<include -->
-<!-- 						name="Verify_Leave_anote_functionality_in_unit_workflow_tasks_with_all_validations"> -->
-<!-- 					</include> -->
+					<include
+						name="Verify_Leave_anote_functionality_in_unit_workflow_tasks_with_all_validations">
+					</include>
 
-<!-- 				</methods> -->
+				</methods>
 
-<!-- 			</class> -->
+			</class>
 
-<!-- 		</classes> -->
-<!-- 	</test> -->
+		</classes>
+	</test>
 
 
 	<!--TC:-24 -->
@@ -416,360 +428,372 @@
 
 	<!--TC:-25 -->
 	<!-- verify Assign User functionality in unit workflow tasks with all validations -->
-	<!-- <test name="Verify_Assign_User_functionality_in_unit_workflow_tasks_with_all_validations"> -->
+	<test
+		name="Verify_Assign_User_functionality_in_unit_workflow_tasks_with_all_validations">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include -->
-	<!-- name="Verify_Assign_User_functionality_in_unit_workflow_tasks_with_all_validations"> -->
-	<!-- </include> -->
+					<include
+						name="Verify_Assign_User_functionality_in_unit_workflow_tasks_with_all_validations">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!--TC:-25 -->
 	<!-- verify Assign User functionality in unit workflow tasks with all validations -->
-	<!-- <test name="verify_Cannot_do_functionality_in_unit_workflow_tasks_with_all_validations"> -->
+	<test
+		name="verify_Cannot_do_functionality_in_unit_workflow_tasks_with_all_validations">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include -->
-	<!-- name="verify_Cannot_do_functionality_in_unit_workflow_tasks_with_all_validations"> -->
-	<!-- </include> -->
+					<include
+						name="verify_Cannot_do_functionality_in_unit_workflow_tasks_with_all_validations">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- task_delete -->
-	<!-- <test name="task_delete"> -->
+	<test name="task_delete">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="task_delete"> -->
-	<!-- </include> -->
+					<include name="task_delete">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- TC-27 -->
 
-	<!-- <test name="Verify_Complate_task_functionality_in_unit_workflow_tasks"> -->
+	<test name="Verify_Complate_task_functionality_in_unit_workflow_tasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_Complate_task_functionality_in_unit_workflow_tasks"> -->
-	<!-- </include> -->
+					<include
+						name="Verify_Complate_task_functionality_in_unit_workflow_tasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- TC-28 -->
 
-	<!-- <test name="Verify_dynamic_form_functionality_in_Unit_workflow_tasks"> -->
+	<test name="Verify_dynamic_form_functionality_in_Unit_workflow_tasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_dynamic_form_functionality_in_Unit_workflow_tasks"> -->
-	<!-- </include> -->
+					<include name="Verify_dynamic_form_functionality_in_Unit_workflow_tasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!-- TC-29 -->
 
-	<!-- <test name="Verify_Clear_dynamic_form_fields_functionality_in_Unit_workflow_tasks"> -->
+	<test
+		name="Verify_Clear_dynamic_form_fields_functionality_in_Unit_workflow_tasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_Clear_dynamic_form_fields_functionality_in_Unit_workflow_tasks"> -->
-	<!-- </include> -->
+					<include
+						name="Verify_Clear_dynamic_form_fields_functionality_in_Unit_workflow_tasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- TC-30 -->
-	<!-- <test name="verify_Finish_dynamic_form_functionality_in_Unit_workflow_tasks_with_all_validations"> -->
+	<test
+		name="verify_Finish_dynamic_form_functionality_in_Unit_workflow_tasks_with_all_validations">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verify_Finish_dynamic_form_functionality_in_Unit_workflow_tasks_with_all_validations"> -->
-	<!-- </include> -->
+					<include
+						name="verify_Finish_dynamic_form_functionality_in_Unit_workflow_tasks_with_all_validations">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- TC-31 -->
-	<!-- <test name="verify_Print_dynamic_form_functionality_in_Unitworkflow_tasks_with_all_validations 
-		"> -->
+	<test
+		name="verify_Print_dynamic_form_functionality_in_Unitworkflow_tasks_with_all_validations 
+		">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verify_Print_dynamic_form_functionality_in_Unitworkflow_tasks_with_all_validations"> -->
-	<!-- </include> -->
+					<include
+						name="verify_Print_dynamic_form_functionality_in_Unitworkflow_tasks_with_all_validations">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- Tc-32 -->
-	<!-- <test name="Verify_Undo_tasks_from_completed_section_in_unit_workflow_tasks"> -->
+	<test name="Verify_Undo_tasks_from_completed_section_in_unit_workflow_tasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verify_Undo_tasks_from_completed_section_in_unit_workflow_tasks"> -->
-	<!-- </include> -->
+					<include
+						name="Verify_Undo_tasks_from_completed_section_in_unit_workflow_tasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- Tc-33 -->
-	<!-- <test name="verify_Undo_tasks_from_Cannot_Do_section_in_unit_workflow_tasks"> -->
+	<test name="verify_Undo_tasks_from_Cannot_Do_section_in_unit_workflow_tasks">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verify_Undo_tasks_from_Cannot_Do_section_in_unit_workflow_tasks"> -->
-	<!-- </include> -->
+					<include
+						name="verify_Undo_tasks_from_Cannot_Do_section_in_unit_workflow_tasks">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!-- TC-35 -->
-	<!-- <test name="verfiy_the_Define_workflow_functionality"> -->
+	<test name="verfiy_the_Define_workflow_functionality">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verfiy_the_Define_workflow_functionality"> -->
-	<!-- </include> -->
+					<include name="verfiy_the_Define_workflow_functionality">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- TC-36 -->
-	<!-- <test name="verfiy_Launch_Unit_workflow_funcitonality"> -->
+	<test name="verfiy_Launch_Unit_workflow_funcitonality">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="verfiy_Launch_Unit_workflow_funcitonality"> -->
-	<!-- </include> -->
+					<include name="verfiy_Launch_Unit_workflow_funcitonality">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!-- TC-37 -->
-	<!-- <test name="To_verify_the_Define_workflow_with_dymamic_form"> -->
+	<test name="To_verify_the_Define_workflow_with_dymamic_form">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="To_verify_the_Define_workflow_with_dymamic_form"> -->
-	<!-- </include> -->
+					<include name="To_verify_the_Define_workflow_with_dymamic_form">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!-- TC-38 -->
-	<!-- <test name="To_verfify_the_Edit_Delete_fucitonalities_for_Defined_workflow"> -->
+	<test name="To_verfify_the_Edit_Delete_fucitonalities_for_Defined_workflow">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="To_verfify_the_Edit_Delete_fucitonalities_for_Defined_workflow"> -->
-	<!-- </include> -->
+					<include
+						name="To_verfify_the_Edit_Delete_fucitonalities_for_Defined_workflow">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!-- ISSUE : 7168 -->
-	<!-- <test name="Verfiy_Fixed_date_recurrance_in_workspace"> -->
+	<test name="Verfiy_Fixed_date_recurrance_in_workspace">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Verfiy_Fixed_date_recurrance_in_workspace"> -->
-	<!-- </include> -->
+					<include name="Verfiy_Fixed_date_recurrance_in_workspace">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- TC-39 -->
-	<!-- <test name="To_verfiy_On_Demand_Instuction_topics"> -->
+	<test name="To_verfiy_On_Demand_Instuction_topics">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="To_verfiy_On_Demand_Instuction_topics"> -->
-	<!-- </include> -->
+					<include name="To_verfiy_On_Demand_Instuction_topics">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 	<!-- TC-40 -->
-	<!-- <test name="Add_On_demand_category_in_demand_instruction_library"> -->
+	<test name="Add_On_demand_category_in_demand_instruction_library">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Add_On_demand_category_in_demand_instruction_library"> -->
-	<!-- </include> -->
+					<include name="Add_On_demand_category_in_demand_instruction_library">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!-- TC-41 -->
-	<!-- <test name="Edit_Delete_created_on_Demand_category_from_list"> -->
+	<test name="Edit_Delete_created_on_Demand_category_from_list">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="Edit_Delete_created_on_Demand_category_from_list"> -->
-	<!-- </include> -->
+					<include name="Edit_Delete_created_on_Demand_category_from_list">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 
 	<!-- TC-42 -->
-	<!-- <test name="On_Demand_instruction_Addondemand_Subcategory"> -->
+	<test name="On_Demand_instruction_Addondemand_Subcategory">
 
-	<!-- <classes> -->
+		<classes>
 
-	<!-- <class name="com.leonardo.verifications.Leonardo"> -->
+			<class name="com.leonardo.verifications.Leonardo">
 
-	<!-- <methods> -->
+				<methods>
 
-	<!-- <include name="On_Demand_instruction_Addondemand_Subcategory"> -->
-	<!-- </include> -->
+					<include name="On_Demand_instruction_Addondemand_Subcategory">
+					</include>
 
-	<!-- </methods> -->
+				</methods>
 
-	<!-- </class> -->
+			</class>
 
-	<!-- </classes> -->
-	<!-- </test> -->
+		</classes>
+	</test>
 </suite>
