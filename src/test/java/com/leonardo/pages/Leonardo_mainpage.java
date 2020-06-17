@@ -2589,9 +2589,13 @@ public class Leonardo_mainpage extends AbstractPage {
 
 	public void AssginUser_in_Unittask() {
 
+		System.out.println("Step :: Click on three dot icon");
+		common.log("Step :: Click on three dot icon");
+		driver.findElement(By.xpath("//div[@class='section-boxed box ng-isolate-scope']//div[@class='content']//icon[2]")).click();
+		
 		System.out.println("Step :: Click on assign user from task template");
 		common.log("Step :: Click on assign user from task template");
-		driver.findElement(By.xpath("(//li[@class='change-user ng-binding ng-scope'][contains(.,'Assign user')])[1]"))
+		driver.findElement(By.xpath("//div[@class='content-main table']//li[2]"))
 				.click();
 
 		common.pause(30);
@@ -2601,15 +2605,15 @@ public class Leonardo_mainpage extends AbstractPage {
 
 		System.out.println("Step :: Click on select user");
 		common.log("Step :: Click on select user");
-		driver.findElement(By.xpath("//li[contains(text(),'Sagar M')]")).click();
+		driver.findElement(By.xpath("//ul[@class='widget-combo-list']//li[1]")).click();
 
 		System.out.println("Step :: Click on assign");
 		common.log("Step :: Click on assign");
-		driver.findElement(By.xpath("//span[@class='btn ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn ng-binding ng-isolate-scope']")).click();
 
 		common.pause(35);
 
-		String assignuser = driver.findElement(By.xpath("//span[@class='initials ng-binding']//div[1]"))
+		String assignuser = driver.findElement(By.xpath("//span[contains(text(),'SM')]"))
 				.getAttribute("value");
 		System.out.println("Step :: Verify the assigen user name ");
 		common.log("Step ::Verify the assigen user name ");
@@ -2660,47 +2664,59 @@ public class Leonardo_mainpage extends AbstractPage {
 	}
 
 	public void Assign_User_functionality_in_unit_workflow_tasks_with_all_validations() {
-		common.pause(30);
-		System.out.println("Step :: Click on assign user");
-		common.log("Step :: Click on  assign user");
-		driver.findElement(By.xpath("(//li[@class='change-user ng-binding ng-scope'][contains(.,'Assign user')])[2]"))
+		
+		common.pause(45);
+		System.out.println("Step :: Click on three dot icon");
+		common.log("Step :: Click on three dot icon");
+		driver.findElement(By.xpath("//div[@class='section-boxed box ng-isolate-scope']//div[@class='content']//icon[2]")).click();
+		
+		System.out.println("Step :: Click on assign user from task template");
+		common.log("Step :: Click on assign user from task template");
+		driver.findElement(By.xpath("//div[@class='content-main table']//li[2]"))
 				.click();
-		common.pause(15);
+
+		common.pause(30);
 		System.out.println("Step :: Click on select user dropdown");
 		common.log("Step :: Click on select user drop down");
 		driver.findElement(By.xpath("//div[@class='form-select-multiple filter-']//div[@class='arrow']")).click();
 
 		System.out.println("Step :: Click on select user");
 		common.log("Step :: Click on select user");
-		driver.findElement(By.xpath("//li[contains(text(),'Sagar M')]")).click();
+		driver.findElement(By.xpath("//ul[@class='widget-combo-list']//li[1]")).click();
 
 		System.out.println("Step :: Click on assign");
 		common.log("Step :: Click on assign");
-		driver.findElement(By.xpath("//span[@class='btn ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn ng-binding ng-isolate-scope']")).click();
 
 		common.pause(35);
 
-		String assignuser = driver.findElement(By.xpath("//span[@class='initials ng-binding']//div[1]"))
+		String assignuser = driver.findElement(By.xpath("//span[contains(text(),'SM')]"))
 				.getAttribute("value");
 		System.out.println("Step :: Verify the assigen user name ");
 		common.log("Step ::Verify the assigen user name ");
+
 	}
 
 	public void Cannot_do_functionality_in_unit_workflow_tasks_with_all_validations() {
 		common.pause(30);
+
+		System.out.println("Step :: Click on three dot icon");
+		common.log("Step :: Click on three dot icon");
+		driver.findElement(By.xpath("//div[@class='section-boxed box ng-isolate-scope']//div[@class='content']//icon[2]")).click();
+		
 		System.out.println("Step :: Click on can't do ");
 		common.log("Step :: Click on can't do");
-		driver.findElement(By.xpath("(//li[@class='deactivate ng-binding ng-scope'][contains(.,'Cannot do')])[1]"))
+		driver.findElement(By.xpath("//div[@class='content-main table']//li[7]"))
 				.click();
 
 		System.out.println("Step :: Click on Can't do button");
 		common.log("Step :: Click on can't do button");
-		driver.findElement(By.xpath("//span[@class='btn btn-delete ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn btn-delete ng-binding ng-isolate-scope']")).click();
 
-		String val = driver.findElement(By.xpath("//p[@class='error ng-binding']")).getAttribute("value");
+	
 
-		System.out.println("Step ::  Validation message>>" + val);
-		common.log("Step :: Validaiton message>>" + val);
+		System.out.println("Step ::  Validation message>>" );
+		common.log("Step :: Validaiton message>>" );
 
 		String srt = common.generateRandomChars(3);
 		driver.findElement(By.xpath("//textarea[@placeholder='Note']")).sendKeys(srt);
@@ -2709,7 +2725,7 @@ public class Leonardo_mainpage extends AbstractPage {
 
 		System.out.println("Step :: Click on Can't do button");
 		common.log("Step :: Click on can't do button");
-		driver.findElement(By.xpath("//span[@class='btn btn-delete ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn btn-delete ng-binding ng-isolate-scope']")).click();
 
 		common.pause(35);
 
@@ -2720,7 +2736,7 @@ public class Leonardo_mainpage extends AbstractPage {
 			common.log("Step :: Task not found in can't do section");
 		}
 
-		String cantdotext = driver.findElement(By.xpath("//h4[@class='center task-name ng-binding']"))
+		String cantdotext = driver.findElement(By.xpath("//h4[@class='center task-name ng-binding ng-isolate-scope']"))
 				.getAttribute("value");
 		System.out.println("Step :: Verify  text in can't do section>>" + cantdotext);
 		common.log("Step :: Verify  text in can't do section>>" + cantdotext);
