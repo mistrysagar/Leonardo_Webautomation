@@ -150,7 +150,7 @@
 							<skip>false</skip>
 							<suiteXmlFiles>
 								<!-- Need to pass testng.xml files as parameters from command line -->
-								<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+								<suiteXmlFile>Leonardo_suite.xml</suiteXmlFile>
 							</suiteXmlFiles>
 							<reportsDirectory>${project.build.directory}/failsafe-reports</reportsDirectory>
 						</configuration>

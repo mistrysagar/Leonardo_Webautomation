@@ -2364,10 +2364,11 @@ public class Leonardo_mainpage extends AbstractPage {
 		driver.findElement(By.xpath(
 				"//div[@class='form-select-multiple filter-']//div[@class='wrapper-select capitalize ng-isolate-scope']//div[@class='arrow']"))
 				.click();
-		common.pause(25);
+		common.pause(35);
+	
 		System.out.println("Step :: select unit type");
 		common.log("Step :: select unit type");
-		driver.findElement(By.xpath("//div[@placeholder='Select Type']//li[1]")).click();
+		driver.findElement(By.xpath("//div[@placeholder='Select Type']//li[2]")).click();
 
 		System.out.println("Step :: Click on select property");
 		common.log("Step :: Click on select property");
@@ -2783,12 +2784,12 @@ public class Leonardo_mainpage extends AbstractPage {
 	public void Complate_task_functionality_in_unit_workflow_tasks() {
 		System.out.println("Step :: Click on checkbox ");
 		common.log("Step :: Click on checkbox");
-		driver.findElement(By.xpath("(//span[@class='resolve ng-binding ng-scope'][contains(.,'Complete')])[1]"))
+		driver.findElement(By.xpath("//div[@class='section-boxed box ng-isolate-scope']//div[@class='content']//div[2]//span"))
 				.click();
-
+		
 		System.out.println("Step :: Click on Mark this as completed");
 		common.log("Step :: Click on Mark this as completed");
-		driver.findElement(By.xpath("//span[@class='btn ng-binding']")).click();
+		driver.findElement(By.xpath("//span[@class='btn ng-binding ng-isolate-scope']")).click();
 
 	}
 
