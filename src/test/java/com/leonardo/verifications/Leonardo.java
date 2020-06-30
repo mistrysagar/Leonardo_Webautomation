@@ -343,6 +343,7 @@ public class Leonardo extends Leonardo_mainpage {
 	@Test
 	public void Edit_Delete_created_on_Demand_category_from_list() {
 		Login_with_valid_Details();
+		
 		Edit_Delete_Created_category_OnDemandinsturction();
 	}
 
