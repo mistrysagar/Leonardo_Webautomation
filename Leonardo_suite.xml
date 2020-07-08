@@ -37,7 +37,7 @@
 			</class>
 
 		</classes>
-	</test>
+	</test> 
 
 
 	<!-- TC:-4 -->
@@ -85,20 +85,20 @@
 	<!-- Verify Remember User name -->
 	<test name="Verify_Remember_Username">
 
-		<classes>
+	<classes>
 
-			<class name="com.leonardo.verifications.Leonardo">
+	<class name="com.leonardo.verifications.Leonardo">
 
-				<methods>
+	<methods>
 
-					<include name="Verify_Remember_Username">
-					</include>
+	<include name="Verify_Remember_Username">
+	</include>
 
-				</methods>
+	</methods>
 
-			</class>
+	</class>
 
-		</classes>
+	</classes>
 	</test>
 
 
@@ -312,9 +312,9 @@
 		</classes>
 	</test>
 
+	
 
-
-
+	
 
 	<!--UNIT TASKS WORKFLOW -->
 
@@ -383,7 +383,10 @@
 	</test>
 
 
-
+	<!--TC:-24 -->
+	<!-- verify Assign Vendor functionality in unit workflow tasks with all 
+		validations -->
+	<!-- Blocker -->
 
 
 	<!--TC:-25 -->
@@ -429,7 +432,7 @@
 
 		</classes>
 	</test>
-
+	
 	<!-- TC-27 -->
 
 	<test name="Verify_Complate_task_functionality_in_unit_workflow_tasks">
@@ -511,8 +514,8 @@
 
 		</classes>
 	</test>
-
-
+	
+	
 	<!-- TC-39 -->
 	<test name="To_verfiy_On_Demand_Instuction_topics">
 
@@ -579,6 +582,43 @@
 				<methods>
 
 					<include name="On_Demand_instruction_Addondemand_Subcategory">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+	</test>
+	
+	<!-- TC-35 -->
+	<test name="verfiy_the_Define_workflow_functionality">
+
+		<classes>
+
+			<class name="com.leonardo.verifications.Leonardo">
+
+				<methods>
+
+					<include name="verfiy_the_Define_workflow_functionality">
+					</include>
+
+				</methods>
+
+			</class>
+
+		</classes>
+	</test>
+<!-- TC-36 -->
+	<test name="verfiy_Launch_Unit_workflow_funcitonality">
+
+		<classes>
+
+			<class name="com.leonardo.verifications.Leonardo">
+
+				<methods>
+
+					<include name="verfiy_Launch_Unit_workflow_funcitonality">
 					</include>
 
 				</methods>
