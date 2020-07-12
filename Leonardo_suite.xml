@@ -590,8 +590,8 @@
 
 		</classes>
 	</test>
-	
-	<!-- TC-35 -->
+
+<!-- TC-35 -->
 	<test name="verfiy_the_Define_workflow_functionality">
 
 		<classes>

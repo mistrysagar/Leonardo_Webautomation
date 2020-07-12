@@ -2224,7 +2224,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		System.out.println("Step :: Click on My portfolio section");
 		common.log("Step :: Click on My portfolio section");
 		driver.findElement(By.xpath("//a[contains(text(),'My portfolios')]")).click();
-		common.pause(25);
+		common.pause(35);
 
 		// Add new unit
 
@@ -2276,7 +2276,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		driver.findElement(By.xpath("//input[@placeholder='Number']")).sendKeys(unitnumber);
 		System.out.println("Step :: Enter the unitnumber" + unitnumber);
 		common.log("Step :: Enter the unitnumber" + unitnumber);
-
+common.pause(25);
 		driver.findElement(By.xpath("//span[@class='btn btn-print ng-binding ng-isolate-scope']")).click();
 
 		common.pause(40);
