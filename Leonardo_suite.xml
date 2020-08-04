@@ -17,6 +17,25 @@
 
 	<parameter name="selenium.url" value="https://beta.leonardo247.com/#/home" />
 
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Leonardo_Web" verbose="10" parallel="tests"
+	thread-count="1">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="6666" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
+		chrome 3) IExplorer : ie8 / ie9 -->
+	<parameter name="selenium.browser" value="chrome" />
+
+	<!-- @NOTE: 1) Un-comment <test> tag to run respective test. 2) Comment 
+		<test> tag to unrun respective test. -->
+
+	<parameter name="selenium.url" value="https://beta.leonardo247.com/#/home" />
+
 
 	<!-- TC:-3 -->
 	<!-- Login into Leonardo Web App with valid credentials -->
@@ -627,4 +646,6 @@
 
 		</classes>
 	</test>
+</suite>
+
 </suite>
