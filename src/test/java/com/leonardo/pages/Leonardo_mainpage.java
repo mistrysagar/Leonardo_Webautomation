@@ -2160,7 +2160,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		common.log("Step :: Click on Save button");
 		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding ng-isolate-scope']")).click();
 
-		common.pause(30);
+		common.pause(50);
 
 		System.out.println("Step :: Click on Filter By");
 		common.log("Step :: Click on Filter By");
@@ -2626,25 +2626,27 @@ common.pause(25);
 		System.out.println("Step :: Click on Definew workflow tasks");
 		common.log("Step :: Click on Deifne workflow tasks");
 		driver.findElement(By.xpath("//a[@ui-sref='unit-turn.workflows'][contains(.,'Define Unit Workflow')]")).click();
-		common.pause(40);
+		common.pause(400);
 
 		for (int i = 1; i < 10; i++)
 
 		{
 
+		
+			
 			if (driver
 					.findElement(
-							By.xpath("//div[@class='region-content ng-scope']//div[2]//div[1]//div[2]//div[1]//i[1]"))
+							By.xpath("//div[@class='workflow-list ng-scope']/div[2]/div[1]/div[1]/div[2]/div[1]"))
 					.isDisplayed()) {
 				System.out.println("Step :: Click on delete icon");
 				common.log("Step :: Click on delete icon");
 				driver.findElement(
-						By.xpath("//div[@class='region-content ng-scope']//div[2]//div[1]//div[2]//div[1]//i[1]"))
+						By.xpath("//div[@class='workflow-list ng-scope']/div[2]/div[1]/div[1]/div[2]/div[1]"))
 						.click();
-
+common.pause(10);
 				System.out.println("Step :: Click on yes ");
 				common.log("Step :: Click on yes");
-				driver.findElement(By.xpath("//span[@class='btn btn-delete ng-binding']")).click();
+				driver.findElement(By.xpath("//span[@class='btn btn-delete ng-binding ng-isolate-scope']")).click();
 
 				common.pause(35);
 			} else {
@@ -3268,7 +3270,7 @@ common.pause(25);
 		System.out.println("Step :: Enter the Unit number");
 		common.log("Step :: Enter the Unit number");
 		driver.findElement(By.xpath("//input[@placeholder='Unit Number']")).sendKeys(unitnumber);
-
+common.pause(5);
 		System.out.println("Step :: Click on Filter button");
 		common.log("Step :: Click on filter button");
 		driver.findElement(By.xpath("//span[@class='btn left ng-binding ng-isolate-scope']")).click();
@@ -3817,7 +3819,7 @@ common.pause(25);
 		common.log("Step :: Click on Workflow Module");
 		driver.findElement(By.xpath("//a[@ui-sref='workflows']")).click();
 
-		common.pause(10);
+		common.pause(30);
 
 		System.out.println("Step :: Click on Define workflows");
 		common.log("Step :: Click on Define Workflows");
@@ -4756,12 +4758,12 @@ common.pause(10);
 				By.xpath("//div[@class='btn btn-small right ng-binding ng-isolate-scope'][contains(.,'Save')]"))
 				.click();
 
-		common.pause(10);
+		common.pause(30);
 		System.out.println("Step:: Click on Edit categories");
 		common.log("Steps :: CLick on Edit categories");
 		driver.findElement(By.xpath("//a[contains(text(),'Edit Categories')]")).click();
 
-		common.pause(5);
+		common.pause(25);
 
 		System.out.println("Step:: Click on dropdown arrow for filter by");
 		common.log("Steps :: CLick on drop down arrow for filter By");
@@ -4784,7 +4786,7 @@ common.pause(10);
 		common.log("Steps :: CLick on edit icon");
 		driver.findElement(By.xpath("//div[@class='edit']//icon[1]")).click();
 
-		common.pause(10);
+		common.pause(30);
 
 		String newcat = common.generateRandomChars(3);
 		System.out.println("Steps:: Update the categortyname>>" + newcat);
@@ -4794,7 +4796,7 @@ common.pause(10);
 		System.out.println("Step:: Click on save button");
 		common.log("Steps :: CLick on save button");
 		driver.findElement(By.xpath("//div[@class='btn btn-small right ng-binding ng-isolate-scope']")).click();
-		common.pause(10);
+		common.pause(30);
 
 		System.out.println("Step:: Click on Edit categories");
 		common.log("Steps :: CLick on Edit categories");
