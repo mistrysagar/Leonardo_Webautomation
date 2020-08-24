@@ -167,6 +167,7 @@ public class SeleniumInit implements ILoggerStatus {
 			 * Enable when run on local Machine
 			 * 
 			 */
+		//	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Desktop\\chromedriver.exe");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();

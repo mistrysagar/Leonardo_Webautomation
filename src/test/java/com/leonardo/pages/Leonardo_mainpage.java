@@ -2252,7 +2252,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		driver.findElement(
 				By.xpath("//div[@class='wrapper-select capitalize ng-isolate-scope disabled']//div[@class='arrow']"))
 				.click();
-
+common.pause(15);
 		System.out.println("Step ::Click on By Portfolio");
 		common.log("Step :: Click on By Portfolio");
 		driver.findElement(By.xpath("//span[contains(text(),'By Portfolio')]")).click();
@@ -2349,7 +2349,7 @@ public class Leonardo_mainpage extends AbstractPage {
 		System.out.println("Step :: Enter the Unit number");
 		common.log("Step :: Enter the Unit number");
 		driver.findElement(By.xpath("//input[@placeholder='Unit Number']")).sendKeys(unitnumber);
-
+		common.pause(15);
 		System.out.println("Step :: Click on Filter button");
 		common.log("Step :: Click on filter button");
 		driver.findElement(By.xpath("//span[@class='btn left ng-binding ng-isolate-scope']")).click();
@@ -2586,7 +2586,7 @@ public class Leonardo_mainpage extends AbstractPage {
 
 		System.out.println("Step :: Click on can't do ");
 		common.log("Step :: Click on can't do");
-		driver.findElement(By.xpath("//div[@class='content-main table']//li[7]")).click();
+		driver.findElement(By.xpath("//div[@class='content-main table']//li[6]")).click();
 
 		System.out.println("Step :: Click on Can't do button");
 		common.log("Step :: Click on can't do button");
@@ -2625,11 +2625,16 @@ public class Leonardo_mainpage extends AbstractPage {
 		System.out.println("Step :: Click Unit section from left menus");
 		common.log("Step :: Click unit section from left menus");
 		driver.findElement(By.xpath("//a[@href='#/unit-turn']")).click();
-		common.pause(25);
-		System.out.println("Step :: Click on Definew workflow tasks");
+		common.pause(20);
+		// common.waitForConditionIsElementPresent("//a[@ui-sref='unit-turn.workflows'][contains(.,'Define
+		// Unit Workflow')]");
+		System.out.println("Step :: Click on Define workflow tasks");
 		common.log("Step :: Click on Deifne workflow tasks");
 		driver.findElement(By.xpath("//a[@ui-sref='unit-turn.workflows'][contains(.,'Define Unit Workflow')]")).click();
-		common.pause(200);
+		common.pause(100);
+
+		// common.waitForConditionIsElementPresent("//div[@class='workflow-list
+		// ng-scope']/div[2]/div[1]/div[1]/div[2]/div[1]");
 
 		for (int i = 1; i < 30; i++)
 
